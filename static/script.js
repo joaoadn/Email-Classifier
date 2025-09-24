@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
         greetingText = 'Boa noite';
     }
-    // AQUI ESTÁ A MUDANÇA: Saudação mais simples
+    
     greetingElement.innerHTML = `<span class="gradient-text">${greetingText}</span><br>Qual email vamos analisar hoje?`;
 
     // --- LÓGICA DA APLICAÇÃO ---
@@ -164,4 +164,5 @@ document.addEventListener('DOMContentLoaded', () => {
             .catch(() => displayError());
         }
     });
+
 });
