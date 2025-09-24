@@ -1,4 +1,4 @@
-# Analisador de Emails com IA
+# Classificador de Emails
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
