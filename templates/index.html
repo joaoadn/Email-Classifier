@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case AutoU</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+    <button id="theme-toggle" title="Alternar tema">
+        <svg id="lightbulb-on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="icon">
+            <path d="M12 2.25a.75.75 0 01.75.75v.518a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM12 15.75a.75.75 0 01.75.75v3a.75.75 0 01-1.5 0v-3a.75.75 0 01.75-.75zM5.106 5.106a.75.75 0 011.06 0l.368.368a.75.75 0 01-1.06 1.06l-.368-.368a.75.75 0 010-1.06zM17.464 17.464a.75.75 0 011.06 0l.368.368a.75.75 0 01-1.06 1.06l-.368-.368a.75.75 0 010-1.06zM21.75 12a.75.75 0 01-.75.75h-.518a.75.75 0 010-1.5h.518a.75.75 0 01.75.75zM4.5 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h.75a.75.75 0 01.75.75zM18.894 6.106a.75.75 0 010 1.06l-.368.368a.75.75 0 01-1.06-1.06l.368-.368a.75.75 0 011.06 0zM6.536 18.894a.75.75 0 010 1.06l-.368.368a.75.75 0 01-1.06-1.06l.368-.368a.75.75 0 011.06 0zM12 6.75a5.25 5.25 0 110 10.5 5.25 5.25 0 010-10.5z" />
+        </svg>
+        <svg id="lightbulb-off" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon hidden">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v-.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125v.375m-4.5 0h4.5m-4.5 0a3 3 0 01-3-3V12a3 3 0 013-3h4.5a3 3 0 013 3v2.25a3 3 0 01-3 3m-3.75 2.25c-.621 0-1.125.504-1.125 1.125v.375c0 .621.504 1.125 1.125 1.125h3.75c.621 0 1.125-.504 1.125-1.125v-.375c0-.621-.504-1.125-1.125-1.125h-3.75z" />
+        </svg>
+    </button>
+</header>
+
+    <main class="container">
+        <section class="content-wrapper">
+            <h1 id="dynamic-greeting"></h1>
+            <div class="input-container">
+                <textarea id="email-text" placeholder="Cole ou digite seu email" rows="1"></textarea>
+                <label for="file-input" class="attach-button" title="Anexar arquivo">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                </label>
+                <input type="file" id="file-input" accept=".txt,.pdf" class="hidden">
+            </div>
+            <div id="file-info" class="hidden">
+                <span id="file-name"></span>
+                <button id="clear-file" title="Remover arquivo">&times;</button>
+            </div>
+            <button id="classify-btn">Analisar</button>
+            <div id="result-section" class="result-section hidden">
+                <div id="loader" class="hidden"></div>
+                <div id="result-container" class="hidden">
+                    <div class="result-header">
+                        <span id="category-badge"></span>
+                    </div>
+                    <div class="classified-text-container">
+                        <h4>Texto Analisado:</h4>
+                        <blockquote id="classified-email-text"></blockquote>
+                        <button id="toggle-text-btn" class="text-toggle-btn hidden">Ver mais...</button>
+                    </div>
+                    <h3>Sugestão de Resposta</h3>
+                    <p id="suggestion"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
