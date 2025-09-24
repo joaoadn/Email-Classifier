@@ -7,7 +7,6 @@ import fitz # PyMuPDF
 # --- Configuração da API da Hugging Face ---
 HF_API_TOKEN = os.getenv("HF_TOKEN")
 headers = {"Authorization": f"Bearer {HF_API_TOKEN}"}
-# Voltamos para o modelo mais estável e rápido para nossa tarefa
 API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-large"
 
 app = Flask(__name__)
@@ -17,8 +16,7 @@ def get_ai_analysis(text):
     Função ÚNICA que faz a classificação e geração em uma só chamada,
     com um prompt otimizado.
     """
-    # PROMPT MELHORADO:
-    # Damos um "papel" para a IA (assistente virtual) e instruções claras.
+    
     prompt = f"""
     Você é um assistente virtual profissional. Sua tarefa é analisar o email abaixo e retornar um objeto JSON.
     O objeto JSON deve ter duas chaves: "categoria" e "sugestao".
@@ -103,4 +101,5 @@ def upload_and_classify_file():
         return jsonify({'error': f'Falha ao processar o arquivo: {str(e)}'}), 500
 
 if __name__ == '__main__':
+
     app.run(debug=True)
