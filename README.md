@@ -44,15 +44,15 @@ To run this project locally, follow these steps:
     python3 -m venv venv
     source venv/bin/activate
     
-    # Install from the clean requirements file:
+    # Install from the requirements file:
     pip install -r requirements.txt
     ```
 
-3.  **Set Up Environment Variables:**
-    - Create a `.env` file in the root directory.
-    - Add your Groq API key:
+3.  **Set Up Environment Variables (Crucial Step):**
+    - In the root directory of the project, create a new file named `.env`.
+    - Inside this file, add your Groq API key like this:
       ```
-      GROQ_API_KEY="your_api_key_here"
+      GROQ_API_KEY="your_secret_api_key_here"
       ```
 
 4.  **Run the Application:**
