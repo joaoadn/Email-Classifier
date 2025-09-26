@@ -10,7 +10,6 @@ The project features a clean, focused, dark-mode UI with an energetic orange acc
 - **Instant Classification**: Categorizes emails as "Productive" (requiring action) or "Unproductive" (informational).
 - **AI-Powered Suggestions**: Generates ready-to-use response suggestions directly within the interface.
 - **File Upload**: Supports analysis of `.txt` and `.pdf` files by simply attaching them.
-- **Streamlined UX**: After analysis, the uploaded file is automatically cleared, preparing the app for the next task.
 - **Minimalist Interface**: The UI is designed to be distraction-free, focusing solely on the input and the actionable output.
 - **High-Speed Performance**: Built with the Groq API to ensure responses are generated almost instantly.
 
