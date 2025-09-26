@@ -4,6 +4,8 @@ A minimalist, high-performance web application designed to accelerate email mana
 
 The project features a clean, focused, dark-mode UI with an energetic orange accent, reflecting a modern and efficient user experience.
 
+![Image](https://github.com/user-attachments/assets/917c8d1e-293f-4037-a4b7-ccf8d6851199)
+
 
 ## 🚀 Live Demo
 
