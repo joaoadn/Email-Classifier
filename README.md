@@ -4,6 +4,8 @@ A minimalist, high-performance web application designed to accelerate email mana
 
 The project features a clean, focused, dark-mode UI with an energetic orange accent, reflecting a modern and efficient user experience.
 
+![Image](https://github.com/user-attachments/assets/6f6a8dee-879a-4c9b-a17f-23af79311da1)
+
 ## 🚀 Live Demo
 
 This application is deployed and available to use for free on Vercel.
