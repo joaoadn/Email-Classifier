@@ -1,70 +1,69 @@
-# Classificador de Emails
+# AI Email Classifier
 
-![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
+A sleek, minimalist web application designed to classify emails and suggest appropriate responses using the power of Large Language Models via the Groq API. This tool helps streamline productivity by providing instant analysis and actionable suggestions.
 
-## 📝 Descrição
 
-Este projeto é uma aplicação web desenvolvida em Python com Flask que utiliza inteligência artificial para automatizar a análise e classificação de emails. A ferramenta é capaz de categorizar um email como "Produtivo" ou "Improdutivo" e sugerir uma resposta apropriada, otimizando o tempo da equipe e reduzindo o trabalho manual de gerenciamento da caixa de entrada.
+## ✨ Key Features
 
-## ✨ Features
+- **AI-Powered Classification**: Instantly categorizes emails as "Productive" or "Unproductive" based on their content.
+- **Automatic Response Suggestion**: Generates a concise, context-aware response suggestion for each analyzed email.
+- **File Analysis**: Supports direct analysis of `.txt` and `.pdf` files, extracting the text for classification.
+- **Minimalist UI**: A clean, dark-mode, single-page interface designed for focus and ease of use.
+- **Fast & Efficient**: Powered by the high-speed Groq API with the Llama 3 model for near-instant results.
 
-- **Classificação com IA:** Utiliza a API da Hugging Face para analisar o conteúdo do email e determinar sua categoria.
-- **Sugestão de Resposta:** Gera uma resposta automática e contextual com base no conteúdo e na categoria do email.
-- **Interface Web Moderna:** Frontend elegante e responsivo com tema claro e escuro.
-- **Suporte a Arquivos:** Permite a análise de arquivos `.txt` e `.pdf` anexados.
-- **Design Minimalista:** Foco em uma experiência de usuário limpa e intuitiva.
+---
 
-## 🛠️ Tecnologias Utilizadas
+## 🚀 Tech Stack
 
-- **Backend:** Python, Flask
-- **Frontend:** HTML, CSS, JavaScript
-- **IA:** Hugging Face Inference API (Modelo `google/flan-t5-large`)
-- **Leitura de PDF:** PyMuPDF
+- **Backend**: Python, Flask
+- **AI Integration**: Groq API (Llama 3 70b)
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Python Libraries**: `python-dotenv`, `PyMuPDF`, `groq`
 
-## 🚀 Como Executar o Projeto
+---
 
-Siga os passos abaixo para rodar a aplicação localmente:
+## ⚙️ Setup and Installation
 
-1.  **Clone o repositório** (ou certifique-se de ter a pasta do projeto):
+To run this project locally, follow these steps:
+
+1.  **Clone the repository:**
     ```bash
-    # Exemplo: git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
-    cd nome-da-pasta-do-projeto
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
     ```
 
-2.  **Crie e ative um ambiente virtual:**
+2.  **Create a virtual environment and install dependencies:**
     ```bash
-    # Windows
+    # For Windows
     py -m venv venv
     .\venv\Scripts\activate
+    
+    # For macOS/Linux
+    python3 -m venv venv
+    source venv/bin/activate
+
+    # Install libraries
+    pip install -r requirements.txt
     ```
 
-3.  **Instale as dependências:**
+3.  **Set up your API Key:**
+    - Create a file named `.env` in the root directory.
+    - Add your Groq API key to it:
+      ```
+      GROQ_API_KEY="your_api_key_here"
+      ```
+
+4.  **Run the application:**
     ```bash
-    py -m pip install -r requirements.txt
+    flask run
     ```
+    The application will be available at `http://127.0.0.1:5000`.
 
-4.  **Configure sua chave da API:**
-    Crie uma conta no [Hugging Face](https://huggingface.co/) e obtenha um Access Token. Depois, defina-o como uma variável de ambiente:
-    ```bash
-    # Windows (Prompt de Comando)
-    set HF_TOKEN=sua_chave_aqui
-    ```
+---
 
-5.  **Execute a aplicação:**
-    ```bash
-    py app.py
-    ```
-    Acesse `http://127.0.0.1:5000` no seu navegador.
+## Usage
 
-## 📂 Estrutura do Projeto
-/
-|-- app.py
-|-- requirements.txt
-|-- README.md
-|-- /static
-|   |-- style.css
-|   |-- script.js
-|-- /templates
-|   |-- index.html
-
-
+- **Text Input**: Paste the email content directly into the text area.
+- **File Upload**: Click the `+` icon to upload a `.txt` or `.pdf` file.
+- **Analyze**: Click the "Analisar" button to get the classification and response suggestion.
+- **Copy**: Use the copy icon within the suggestion box to copy the text to your clipboard.
