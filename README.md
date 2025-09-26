@@ -1,4 +1,4 @@
-# AI Email Assistant | A Case Study for AutoU
+# AI Email Assistant 
 
 A minimalist, high-performance web application designed to accelerate email management. This tool leverages the Groq API with Llama 3 to instantly classify emails and generate concise response suggestions, streamlining communication workflows.
 
