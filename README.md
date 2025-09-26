@@ -4,10 +4,6 @@ A minimalist, high-performance web application designed to accelerate email mana
 
 The project features a clean, focused, dark-mode UI with an energetic orange accent, reflecting a modern and efficient user experience.
 
-![GIF of the application in use](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGNpd3Ftdmx6a25jZzB2eG5iNzhkNmJzbm5xZnh2eHRzMnhmbWM3eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/your-gif-id/giphy.gif)
-*Recomendação: Grave um GIF rápido da tela (usando ferramentas como LICEcap ou GIPHY Capture) e substitua o link acima. Isso torna o README extremamente profissional.*
-
----
 
 ## ✨ Key Features
 
