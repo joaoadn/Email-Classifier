@@ -1,24 +1,31 @@
-# AI Email Classifier
+# AI Email Assistant | A Case Study for AutoU
 
-A sleek, minimalist web application designed to classify emails and suggest appropriate responses using the power of Large Language Models via the Groq API. This tool helps streamline productivity by providing instant analysis and actionable suggestions.
+A minimalist, high-performance web application designed to accelerate email management. This tool leverages the Groq API with Llama 3 to instantly classify emails and generate concise response suggestions, streamlining communication workflows.
 
+The project features a clean, focused, dark-mode UI with an energetic orange accent, reflecting a modern and efficient user experience.
+
+![GIF of the application in use](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGNpd3Ftdmx6a25jZzB2eG5iNzhkNmJzbm5xZnh2eHRzMnhmbWM3eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/your-gif-id/giphy.gif)
+*Recomendação: Grave um GIF rápido da tela (usando ferramentas como LICEcap ou GIPHY Capture) e substitua o link acima. Isso torna o README extremamente profissional.*
+
+---
 
 ## ✨ Key Features
 
-- **AI-Powered Classification**: Instantly categorizes emails as "Productive" or "Unproductive" based on their content.
-- **Automatic Response Suggestion**: Generates a concise, context-aware response suggestion for each analyzed email.
-- **File Analysis**: Supports direct analysis of `.txt` and `.pdf` files, extracting the text for classification.
-- **Minimalist UI**: A clean, dark-mode, single-page interface designed for focus and ease of use.
-- **Fast & Efficient**: Powered by the high-speed Groq API with the Llama 3 model for near-instant results.
+- **Instant Classification**: Categorizes emails as "Productive" (requiring action) or "Unproductive" (informational).
+- **AI-Powered Suggestions**: Generates ready-to-use response suggestions directly within the interface.
+- **File Upload**: Supports analysis of `.txt` and `.pdf` files by simply attaching them.
+- **Streamlined UX**: After analysis, the uploaded file is automatically cleared, preparing the app for the next task.
+- **Minimalist Interface**: The UI is designed to be distraction-free, focusing solely on the input and the actionable output.
+- **High-Speed Performance**: Built with the Groq API to ensure responses are generated almost instantly.
 
 ---
 
 ## 🚀 Tech Stack
 
 - **Backend**: Python, Flask
-- **AI Integration**: Groq API (Llama 3 70b)
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Python Libraries**: `python-dotenv`, `PyMuPDF`, `groq`
+- **AI Integration**: Groq API (Llama 3)
+- **Frontend**: HTML5, CSS3 (Flexbox), Vanilla JavaScript
+- **File Processing**: PyMuPDF
 
 ---
 
@@ -26,44 +33,35 @@ A sleek, minimalist web application designed to classify emails and suggest appr
 
 To run this project locally, follow these steps:
 
-1.  **Clone the repository:**
+1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
-    cd your-repo-name
+    git clone [https://github.com/joaoadn/Email-Classifier.git](https://github.com/joaoadn/Email-Classifier.git)
+    cd Email-Classifier
     ```
 
-2.  **Create a virtual environment and install dependencies:**
+2.  **Create a Virtual Environment & Install Dependencies:**
     ```bash
-    # For Windows
+    # For Windows:
     py -m venv venv
     .\venv\Scripts\activate
-    
-    # For macOS/Linux
+
+    # For macOS/Linux:
     python3 -m venv venv
     source venv/bin/activate
-
-    # Install libraries
+    
+    # Install from the clean requirements file:
     pip install -r requirements.txt
     ```
 
-3.  **Set up your API Key:**
-    - Create a file named `.env` in the root directory.
-    - Add your Groq API key to it:
+3.  **Set Up Environment Variables:**
+    - Create a `.env` file in the root directory.
+    - Add your Groq API key:
       ```
       GROQ_API_KEY="your_api_key_here"
       ```
 
-4.  **Run the application:**
+4.  **Run the Application:**
     ```bash
     flask run
     ```
-    The application will be available at `http://127.0.0.1:5000`.
-
----
-
-## Usage
-
-- **Text Input**: Paste the email content directly into the text area.
-- **File Upload**: Click the `+` icon to upload a `.txt` or `.pdf` file.
-- **Analyze**: Click the "Analisar" button to get the classification and response suggestion.
-- **Copy**: Use the copy icon within the suggestion box to copy the text to your clipboard.
+    Open `http://127.0.0.1:5000` in your browser.
