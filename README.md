@@ -8,7 +8,7 @@ The project features a clean, focused, dark-mode UI with an energetic orange acc
 
 This application is deployed and available to use for free on Vercel.
 
-**[Click here to access the live demo!]([YOUR_VERCEL_APP_URL](https://email-classifier-case-autou.vercel.app/))**
+**[Click here to access the live demo!](https://email-classifier-case-autou.vercel.app/)**
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/joaoadn/Email-Classifier)
 
