@@ -1,28 +1,31 @@
-# AI Email Assistant 
+# AI Email Assistant
 
 A minimalist, high-performance web application designed to accelerate email management. This tool leverages the Groq API with Llama 3 to instantly classify emails and generate concise response suggestions, streamlining communication workflows.
 
 The project features a clean, focused, dark-mode UI with an energetic orange accent, reflecting a modern and efficient user experience.
 
+## 🚀 Live Demo
+
+This application is deployed and available to use for free on Vercel.
+
+**[Click here to access the live demo!]([YOUR_VERCEL_APP_URL](https://email-classifier-case-autou.vercel.app/))**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/joaoadn/Email-Classifier)
 
 ## ✨ Key Features
 
-- **Instant Classification**: Categorizes emails as "Productive" (requiring action) or "Unproductive" (informational).
-- **AI-Powered Suggestions**: Generates ready-to-use response suggestions directly within the interface.
-- **File Upload**: Supports analysis of `.txt` and `.pdf` files by simply attaching them.
-- **Minimalist Interface**: The UI is designed to be distraction-free, focusing solely on the input and the actionable output.
-- **High-Speed Performance**: Built with the Groq API to ensure responses are generated almost instantly.
+-   **Instant Classification**: Categorizes emails into "Productive" (requiring action) or "Unproductive" (informational).
+-   **AI-Powered Suggestions**: Generates ready-to-use response suggestions directly within the interface.
+-   **File Upload Support**: Analyzes content from `.txt` and `.pdf` files.
+-   **Minimalist Interface**: A distraction-free UI focused entirely on input and actionable output.
+-   **High-Speed Performance**: Built with the Groq API to ensure responses are generated almost instantly.
 
----
+## 🛠️ Tech Stack
 
-## 🚀 Tech Stack
-
-- **Backend**: Python, Flask
-- **AI Integration**: Groq API (Llama 3)
-- **Frontend**: HTML5, CSS3 (Flexbox), Vanilla JavaScript
-- **File Processing**: PyMuPDF
-
----
+-   **Backend**: Python, Flask
+-   **AI Integration**: Groq API (Llama 3)
+-   **Frontend**: HTML5, CSS3 (Flexbox), Vanilla JavaScript
+-   **File Processing**: PyMuPDF
 
 ## ⚙️ Setup and Installation
 
@@ -36,27 +39,28 @@ To run this project locally, follow these steps:
 
 2.  **Create a Virtual Environment & Install Dependencies:**
     ```bash
-    # For Windows:
+    # Create and activate a virtual environment
+    # On Windows:
     py -m venv venv
     .\venv\Scripts\activate
 
-    # For macOS/Linux:
+    # On macOS/Linux:
     python3 -m venv venv
     source venv/bin/activate
     
-    # Install from the requirements file:
+    # Install dependencies
     pip install -r requirements.txt
     ```
 
 3.  **Set Up Environment Variables (Crucial Step):**
-    - In the root directory of the project, create a new file named `.env`.
-    - Inside this file, add your Groq API key like this:
-      ```
-      GROQ_API_KEY="your_secret_api_key_here"
-      ```
+    -   In the project's root directory, create a new file named `.env`.
+    -   Inside this file, add your Groq API key as follows:
+        ```
+        GROQ_API_KEY="your_secret_api_key_here"
+        ```
 
 4.  **Run the Application:**
     ```bash
     flask run
     ```
-    Open `http://127.0.0.1:5000` in your browser.
+    Now, open `http://127.0.0.1:5000` in your browser.
